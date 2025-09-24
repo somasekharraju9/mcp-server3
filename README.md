@@ -1,6 +1,6 @@
-# Spring AI MCP Weather Server Sample with WebMVC Starter
+# Spring AI MCP Location Server Sample with WebMVC Starter
 
-This sample project demonstrates how to create an MCP server using the Spring AI MCP Server Boot Starter with WebMVC transport. It implements a weather service that exposes tools for retrieving weather information using the National Weather Service API.
+This sample project demonstrates how to create an MCP server using the Spring AI MCP Server Boot Starter with WebMVC transport. It implements a location service that exposes tools for retrieving location information using the National Location Service API.
 
 For more information, see the [MCP Server Boot Starter](https://docs.spring.io/spring-ai/reference/api/mcp/mcp-server-boot-starter-docs.html) reference documentation.
 
@@ -10,9 +10,12 @@ The sample showcases:
 - Integration with `spring-ai-mcp-server-webmvc-spring-boot-starter`
 - Support for both SSE (Server-Sent Events) and STDIO transports
 - Automatic tool registration using Spring AI's `@Tool` annotation
-- Two weather-related tools:
-  - Get weather forecast by location (latitude/longitude)
-  - Get weather alerts by US state
+- Two location-related tools:
+  - Convert address or city name to coordinates (latitude, longitude)
+  - Convert coordinates (latitude, longitude) to address and city name
+  - Get timezone information for specific coordinates (latitude, longitude)
+  - Get major cities within a specific country
+  - Calculate distance between two geographic points
 
 ## Dependencies
 
